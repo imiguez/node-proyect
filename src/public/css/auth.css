@@ -1,0 +1,11 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+form input {
+    min-height: 25px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}

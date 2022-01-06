@@ -1,0 +1,78 @@
+version: '3.7'
+services:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+    restart: always
+    ports:
+      - 8080:80
+
+
+# version: "3"
+# services:
+#   mysql:
+#     image: mysql
+#     ports:
+#       - 3306:3306
+#     environment:
+#       - MYSQL_ROOT_PASWORD=root
+#       - MYSQL_DATABASE=nodejs
+#       - MYSQL_USER=usernode
+#       - MYSQL_PASSWORD=root
+#     container_name: node_proyect
+
+    # environment:
+    #   MYSQL_ROOT_PASWORD: 'root'
+    #   MYSQL_DATABASE: 'nodejs'
+    #   MYSQL_USER: 'usernode'
+    #   MYSQL_PASSWORD: 'root'
+
+# version: "3.2"
+# services:
+#   nodejs:
+#     build: 
+#       context: .
+#     # image: amakundu/nodejs-mysql-app
+#     networks:
+#       - frontend
+#       - backend
+#     # environment:
+#     #   - MYSQL_HOST=moe-mysql-app
+#     #   - MYSQL_USER=moeuser
+#     #   - MYSQL_PASS=moepass
+#     #   - MYSQL_DB=moe_db
+#     volumes:
+#       - ./www/:/var/www/html/
+#     ports:
+#       - "30001:8005"
+#     container_name: node-proyect-node
+
+#   mysql:
+#     image: mysql
+#     networks:
+#       - backend
+#     environment:
+#       - MYSQL_ROOT_PASSWORD=root
+#       - MYSQL_USER=root
+#       - MYSQL_PASSWORD=root
+#       - MYSQL_DATABASE=nodejs
+#     container_name: mysql-proyect-node
+
+#   phpmyadmin:
+#     image: phpmyadmin/phpmyadmin:4.7
+#     depends_on:
+#       - mysql
+#     networks:
+#       - backend
+#     ports:
+#       - "30002:80"
+#     environment:
+#       - PMA_HOST=mysql-proyect-node
+#       - PMA_PORT= 3306
+#     volumes:
+#       - /sessions
+#     container_name: phpmyadmin-proyect-node
+# networks:
+#   frontend:
+#   backend:

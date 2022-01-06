@@ -1,0 +1,18 @@
+<article class="form-container">
+    <form action="./register" method="POST" class="container">
+        {{!-- <img src="../img/profile-img.jpg" alt="" class="profile-photo"> --}}
+        <section class="row justify-content-center">
+            <input type="text" name="name" class="col-8 mt-3" placeholder="First name" maxlength="30" required>
+            <input type="text" name="lastname" class="col-8 mt-3" placeholder="Last name" maxlength="50" required>
+            <input type="text" name="username" class="col-8 mt-3" placeholder="Username" maxlength="30" required>
+            <input type="password" name="password" class="col-8 mt-3" placeholder="Password" required>
+            <div class="w-100"></div>
+            <button type="submit" class="btn btn-primary col-4 mt-4 rounded-pill">Sign Up</button>
+            <div class="w-100 d-flex justify-content-center mt-4">
+                <p class="m-0">Ya tienes una cuenta?</p>
+                <a href="./login" class="btn btn-link p-0 ms-2">Inicia sesión</a>
+            </div>
+
+        </section>
+    </form>
+</article>

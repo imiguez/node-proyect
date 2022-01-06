@@ -1,0 +1,47 @@
+.post {
+    padding-bottom: 15vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-header, .card-header div {
+    align-items: center;
+}
+
+.profile-photo {
+    width: 50px;
+    border-radius: 25px;
+}
+
+.post-multimedia {position: relative;}
+
+.post-multimedia .fas.fa-user-circle {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.post-btns {position: relative;}
+.post-btns i {
+    transform: scale(2);
+    padding: 15px;
+    margin-right: 15px;
+}
+.post-btns i:last-child {
+    position: absolute;
+    right: 30px;
+    padding-right: 0px;
+    margin: 0;
+}
+
+.post-description, .likes-amount, .comments-amount {
+    padding: 5px 10px;
+    margin: 0;
+}
+.likes-amount, .comments-amount {
+    font-size: 14px;
+    font-weight: bold;
+}
+.comments-amount {color: rgba(0, 0, 0, 0.6);}

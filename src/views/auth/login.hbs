@@ -1,0 +1,17 @@
+<article class="form-container">
+    <form action="./login" method="POST" class="container">
+        {{!-- <img src="../img/profile-img.jpg" alt="" class="profile-photo"> --}}
+        <section class="row justify-content-center">
+            <p class="col-8 invalid-feedback" style="width: auto; display: {{ displayError }};">El nombre de usuario y/o la contraseña estan mal.</p>
+            <input type="text" name="username" class="col-8 mt-3" placeholder="Username" maxlength="30" required>
+            <input type="password" name="password" class="col-8 mt-3" placeholder="Password" required>
+            <div class="w-100"></div>
+            <button type="submit" class="btn btn-primary col-4 mt-4 rounded-pill">Sign In</button>
+            <div class="w-100 d-flex justify-content-center mt-4">
+                <p class="m-0">No tienes cuenta?</p>
+                <a href="./register" class="btn btn-link p-0 ms-2">Registrate</a>
+            </div>
+
+        </section>
+    </form>
+</article>

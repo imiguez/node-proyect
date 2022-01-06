@@ -1,0 +1,17 @@
+* {
+    font: Roboto;
+}
+body {
+    margin: 0;
+}
+nav {
+    background-color: black;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    
+    width: 100%;
+}
+nav i {
+    color: white;
+}

@@ -1,0 +1,18 @@
+docker exec -it node_proyect mysql -p
+
+https://www.youtube.com/watch?v=qJ5R9WTW0_E
+min 31:45
+min 59:45
+min 1:11:00
+min 1:55:00
+
+    id int NOT NULL AUTO_INCREMENT,
+    author int,
+    tags int,
+    multimedia int,
+    description varchar(255),
+    likes int,
+    comments int
+    PRIMARY KEY (id),
+    FOREIGN KEY (author) REFERENCES user(id)
+);
