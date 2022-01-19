@@ -1,0 +1,31 @@
+<aside class="position-fixed col-3 pe-3">
+    <section class="card-header d-flex justify-content-between">
+        <div class="d-flex">
+            <button class="position-relative profile-photo-btn">
+                <img src="/img/profile-img.jpg" alt="" class="profile-photo position-relative">
+                <span class="position-absolute bottom-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                    <span class="visually-hidden">Active</span>
+                </span>
+            </button>
+            <h2 class="card-tittle ms-3 fs-4">Monica Perez</h2>
+        </div>
+        {{!-- <i class="fas fa-ellipsis-v fa-2x btn post-options"></i> --}}
+    </section>
+    <section class="w-100 mt-5">
+        <h4 class="card-header py-4">Suggestions</h4>
+    {{#each amount}}
+    <div class="card-header d-flex justify-content-between">
+        <div class="d-flex">
+            <button class="position-relative profile-photo-btn">
+                <img src="/img/profile-img.jpg" alt="" class="profile-photo position-relative">
+                <span class="position-absolute bottom-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                    <span class="visually-hidden">Active</span>
+                </span>
+            </button>
+            <h2 class="card-tittle ms-3 fs-5">Juan Perez</h2>
+        </div>
+        <a href=""><i class="fas fa-user-plus fa-1x"></i></a>
+    </div>
+    {{/each}}
+    </section>
+</aside>

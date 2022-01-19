@@ -1,13 +1,20 @@
 .post {
+    width: 80%;
     padding-bottom: 15vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
 .card-header, .card-header div {
     align-items: center;
 }
-
-.profile-photo {
+.profile-photo-btn {
+    height: 50px;
+    padding: 0;
+    border: none;
+    top: 75%;
+}
+.profile-photo, .profile-photo-btn {
     width: 50px;
     border-radius: 25px;
 }

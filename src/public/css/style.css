@@ -4,14 +4,29 @@
 body {
     margin: 0;
 }
+
 nav {
+    height: 10vh;
+    z-index: 1;
+}
+
+/* nav {
     background-color: black;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    height: 10vh;
 }
 nav i {
     color: white;
 }
+
+.headerNav {
+    top: 0;
+    padding: 10px;
+}
+
+.footerNav {
+    bottom: 0;
+} */

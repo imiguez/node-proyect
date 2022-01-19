@@ -8,7 +8,7 @@ const router = express.Router();
 
 
 router.get("/add", (req, res) => {
-    res.render('posts/add');
+    res.render('pages/posts/add');
 });
 
 router.post("/add", async (req, res) => {

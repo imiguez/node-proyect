@@ -12,7 +12,7 @@ min 1:55:00
     multimedia int,
     description varchar(255),
     likes int,
-    comments int
+    comments int,
     PRIMARY KEY (id),
     FOREIGN KEY (author) REFERENCES user(id)
 );

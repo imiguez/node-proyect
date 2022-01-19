@@ -45,10 +45,9 @@ app.use(morgan('dev'));
 app.use(parser.urlencoded({extended: false}));
 app.use(parser.json());
 
-// Routes imports
+// Routes 
 app.use(require('./routes'));
-// Routes
-
+app.use('/post', require('./routes/posts'));
 
 // Public 
 app.use(express.static(__dirname + "/public"));

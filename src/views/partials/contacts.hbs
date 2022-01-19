@@ -1,0 +1,16 @@
+<aside class="position-fixed col-3">
+    {{#each amount}}
+    <section class="card-header d-flex justify-content-between">
+        <div class="d-flex">
+            <button class="position-relative profile-photo-btn">
+                <img src="/img/profile-img.jpg" alt="" class="profile-photo position-relative">
+                <span class="position-absolute bottom-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                    <span class="visually-hidden">Active</span>
+                </span>
+            </button>
+            <h2 class="card-tittle ms-3 fs-5">Juan Perez</h2>
+        </div>
+        <i class="far fa-comment fa-2x"></i>
+    </section>
+    {{/each}}
+</aside>
